@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+	<title></title>
+	<script>
+    	var photos_count = 7//змінна кількості фотографій які треьа перегорнути
+    	var current_photo_index = 1;//змінна яка містить індекс поточного номера фото 
+    	function show_next_photo() { // створюємо функцію для гортання фото
+    		current_photo_index++;//додаємо одиничку до поточної змінної із номером фото
+    		if (current_photo_index > photos_count) 
+    		current_photo_index = 1;// умова, що дозволяє по колу перемикати фото від 1 до 5 включно, а потім знову від 1 до 5 включно
+    		var element_photo = document.getElementById("current_photo"); // помістити у змінну витягнутий елемент із id current_photo
+    		element_photo.src = "photo" + current_photo_index + ".jpg";// заміни номер у назві фото на поточний
+    	}
+    	console.log("Юліє Миколаївно, вам не жалко буде 12??:_)")
+    </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- тут я використав комбінований селектор для верхньої навігації -->
+<nav class="topnav">
+	<div>
+		<a class="active" href="index.html">Головна</a>
+		<div class="right_nav_content">
+		<a href="Loading.html">Увійти</a>
+		<a href="Register.html">Зареєструватися</a>
+		</div>
+	</div>
+</nav>
+<!-- --------------------------------------------------- -->
+<div class="logo">
+	<span>
+		<img class="logo_img" src="photo_2022-06-05_23-55-10.jpg">
+	<span>
+</div>
+<!-- --------------------------------------------------- -->
+<div class="perevagy">
+	<h1>
+		Пориньте в світ криптовалют разом з Ayne
+	</h1>
+
+	<div class="container">
+		<div class="block1">
+			<img src="images1.png">
+		</div>
+		<div class="block2">
+			<img src="images2.png">
+		</div>
+		<div class="block3">
+			<img src="images3.png">
+		</div>
+	</div>
+</div>
+<!-- --------------------------------------------------- -->
+<div id="сryptocurrency">
+	<div>
+		<h1>Що таке криптовалюта?</h1>
+		<div class="text_content">
+			<p>Криптовалюта це - різновид цифрової валюти, емісія та облік якої виконується децентралізованою платіжною системою повністю в автоматичному режимі 
+	(без можливості внутрішнього або зовнішнього адміністрування).</p>
+		</div>
+
+		<div class="text_content">
+			<div>
+				<p>Першою криптовалютою став биткоїн, створений розробником або групою розробників під псевдонімом Сатосі Накомото 2009р.</p>
+			</div>
+			<img src="Без названия.jfif">
+		</div>
+
+		<div class="text_content">
+			<p>Криптовалюти не мають центрального органу управління. 
+	Усі операціїї превіряються мережою учасників, тобто іншими користувачами.</p>
+		</div>
+	</div>
+</div>
+<!-- --------------------------------------------------- -->
+<div id="photo_coins">
+	<div>
+			<img id="current_photo" src="images/photo1.jpg" />
+		</div>	
+	</div>
+	
+	<div id="coins_button">
+		<button  onclick ="show_next_photo()">Наступне фото</button>
+</div>
+<!-- --------------------------------------------------- -->
+<div id="zaklyk">
+	<h1>Почніть заробляти сьогодні!</h1>
+	<div class="zaklyk_position">
+		<div class="knopka_zaklyk">
+			<a href="Register.html"><div>Зареєструватись</div></a>
+		</div>
+	</div>
+</div>
+<!-- --------------------------------------------------- -->
+<div class="help">
+	<h1>
+		Потрібна допомога?
+	</h1>
+
+	<div class="container">
+		<div class="help_block1">
+			<a href="https://t.me/waider2058"><img src="images4.png"></a>
+		</div>
+		<div class="help_block2">
+			<a href="Loading.html"><img src="images5.png"></a>
+		</div>
+		<div class="help_block3">
+			<a href="Loading.html"><img src="images6.png"></a>
+		</div>
+	</div>
+</div>
+<!-- --------------------------------------------------- -->
+<footer>
+    <div class="table1">
+       <div class="container">
+            <a href="https://www.instagram.com/lil.6od1a/"><div class="block"><img src="icon1.png"></div></a>
+            <a href="https://uk-ua.facebook.com/"><div class="block"><img src="icon2.png"></div></a>
+            <a href="https://t.me/waider2058"><div class="block"><img src="icon3.png"></div></a>
+            <a href="https://discord.gg/n3jeCskS97"><div class="block"><img src="icon4.png"></div></a>
+            <a href="bogdanfliak4@gmail.com"><div class="block"><img src="icon5.png"></div></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

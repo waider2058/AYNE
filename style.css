@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+	color: white;
+}
+h1{
+	font-family: Arial;
+	text-align: center; 
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*-----------------------------------*/
+.topnav {
+	overflow: hidden;
+	border-radius: 8px;
+}
+/*тут я використав псевдо селектор hover 
+для того щоб при наведенні елемент міняв свій вигляд*/
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+/*Тут я використав наслідування*/ 
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+/*тут я використав псевдо селектор active 
+для того щоб показувало користувачеві 
+на якій вкладці він знаходиться */
+.topnav a.active {
+	background-color: orange;
+	color: black;
+}
+.right_nav_content{
+	float: right;
+}
+/*-----------------------------------*/
+
+/*Логотип*/
+.logo{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+.logo_img{
+	height: 150px;
+}
+
+/*Контейнер з перевагами  типу(чому саме в нас?)*/
+.perevagy{
+	margin-top: 110px;
+	margin-bottom: 150px;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.block1, .block2, .block3{
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+	width: 366px;
+	height: 600px;
+	background-color: orange;
+}
+
+/*Контейнер із розказом про засновника*/
+#сryptocurrency{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.text_content{
+	display: flex;
+	width: auto;
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#сryptocurrency h1{
+	font-weight: bolder;
+	margin-bottom: 60px;
+}
+#сryptocurrency > div{
+	border-radius: 25px;
+	padding: 10px;
+	width: 75%;
+	height: auto;
+}
+#сryptocurrency img{
+	display: flex;
+	height: 135px;
+	align-items: center;
+	border-radius: 25px;
+}
+p{
+	align-items: center;
+	font-size: 28px;
+}
+
+/*Контейнер із варіантами коїнів*/
+#current_photo{
+	border-radius: 15px;
+}
+#photo_coins{
+	display: flex;
+	justify-content: center;
+	padding-top: 75px;
+}
+#photo_coins > div{
+	display: flex;
+	justify-content: center;
+	background-color: orange;
+	border-radius: 25px;
+	width: 1020px;
+}
+#coins_button{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 75px;
+}
+#coins_button > button{
+	width: 150px;
+	height: 50px;
+	border-radius: 25px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: orange;
+}
+
+
+/*Контейнер з закликом до дії*/
+#zaklyk{
+	padding-top: 150px;
+}
+.zaklyk_position{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: none;
+}
+.knopka_zaklyk{
+	width: 650px;
+	height: 100px;
+	background-color: orange;
+	border-radius: 25px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	font-size: 32px;
+	font-weight: bolder;
+	color: black;
+}
+
+/*Контейнет з тех підтримкою*/
+.help{
+	padding-top: 150px;
+	padding-bottom: 100px;
+	background: linear-gradient(180deg, #000000 10%, #D9D9D9 100%);
+}
+.help_block1, .help_block2, .help_block3{
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 280px;
+	background-color: orange;
+}
+
+/*Контейнер - Футер*/
+footer{
+	background: linear-gradient(180deg, #D9D9D9 0%, #FFFFFF 100%);
+	padding-bottom: 100px;
+	justify-content: center;
+	display: flex;
+}
+.table1,{
+  background-color: #8C6F56;
+  border-radius: 8px;
+}
+.block{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+
+/*-----------------------------------*/
+#reg_body{
+	background-color: white;
+}
+#reg_logo{
+	height: 160px;
+	border-radius: 25px;
+}
+#reg_position{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	float: none;
+}
+/*-----------------------------------*/
+#back_plade{
+	background-color: #D9D9D9;
+	width: 706px;
+	height: 250px;
+	padding: auto;
+	margin: auto;
+	border-radius: 25px;
+}
+
+input{
+	margin-top: 15px;
+	border: 2px solid black;
+	border-radius: 25px;
+	width: 696px;
+	height: 20px;
+	padding-left: 7px;
+	margin: auto;
+}
+
+#passwords{
+	margin-top: 30px;
+}
+/*-----------------------------------*/
+#reg_p{
+	color: black;
+	margin-left: 15px;
+	font-weight: bold;
+}
+#reg_bottom_buttons{
+	background-color: white;
+	width: 706px;
+	height: 50px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: auto;
+	margin: auto;
+}
+.buttons{
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+	margin: auto;
+	float: none;
+	background-color: orange;
+	height: 30px;
+	width: 150px;
+	border-radius: 25px;
+}
+/*-----------------------------------*/
+#loading_container{
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+}
